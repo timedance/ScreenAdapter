@@ -1,0 +1,2 @@
+include ':app', ':enum-screen-size', ':res', ':enum-smallest-width', ':original', ':hook-measure', ':hook-dimension', ':utils'
+rootProject.name='ScreenAdapter'

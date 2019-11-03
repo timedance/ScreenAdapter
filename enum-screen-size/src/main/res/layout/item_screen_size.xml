@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,PxUsage">
+
+    <TextView
+        android:layout_width="@dimen/x540"
+        android:layout_height="@dimen/x81"
+        android:background="#9900BBFF"
+        android:gravity="center"
+        android:text="占据一半的屏幕"
+        android:textColor="@color/common_title"
+        android:textSize="@dimen/x39" />
+
+    <TextView
+        android:layout_width="@dimen/x540"
+        android:layout_height="@dimen/x81"
+        android:layout_gravity="end"
+        android:background="#CCFF8C3C"
+        android:gravity="center"
+        android:text="占据一半的屏幕"
+        android:textColor="@color/common_title"
+        android:textSize="@dimen/x39" />
+</LinearLayout>

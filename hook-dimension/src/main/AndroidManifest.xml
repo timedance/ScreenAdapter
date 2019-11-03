@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.timedance.hookdimension">
+
+    <application>
+        <activity
+            android:name="com.timedance.hookdimension.HookDimensionActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

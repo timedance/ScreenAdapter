@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.timedance.hookmeasure.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,PxUsage">
+
+    <TextView
+        android:layout_width="540px"
+        android:layout_height="81px"
+        android:background="#9900BBFF"
+        android:gravity="center"
+        android:text="占据一半的屏幕"
+        android:textColor="@color/common_title"
+        android:textSize="39px" />
+
+    <TextView
+        android:layout_width="540px"
+        android:layout_height="81px"
+        android:layout_gravity="end"
+        android:background="#CCFF8C3C"
+        android:gravity="center"
+        android:text="占据一半的屏幕"
+        android:textColor="@color/common_title"
+        android:textSize="39px" />
+</com.timedance.hookmeasure.autolayout.AutoLinearLayout>

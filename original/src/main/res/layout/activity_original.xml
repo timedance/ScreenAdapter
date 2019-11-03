@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_background_color"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,PxUsage">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="middle"
+        android:maxLines="2"
+        android:text="【已开放模拟战】10月23日王者模拟战模式临时维护公告"
+        android:textColor="@color/common_title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="4dp"
+        android:text="老亚瑟收到部分玩家反馈在参与王者模拟战玩法时，偶现加载界面卡死无法正常进入游戏的异常问题。目前问题已经定位，为了修复该问题，我们将暂时关闭王者模拟战玩法。修复完成后我们会第一时间重新开启王者模拟战玩法，修复期间已在王者模拟战局内的玩家不受影响。我们对给各位召唤师造成影响感到非常非常的抱歉，给各位召唤师们带来的不便还请谅解，我们将在官网和其他官方平台为您及时更新处理进度。"
+        android:textColor="@color/common_gray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <View
+        android:id="@+id/viewHotRankingBg"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_detail_hot_ranking"
+        app:layout_constraintEnd_toStartOf="@+id/viewFirstContributorBg"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toStartOf="@+id/tvContent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContent" />
+
+    <View
+        android:id="@+id/viewFirstContributorBg"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/bg_detail_first_contributor"
+        app:layout_constraintBottom_toBottomOf="@+id/viewHotRankingBg"
+        app:layout_constraintEnd_toEndOf="@+id/tvContent"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toEndOf="@+id/viewHotRankingBg"
+        app:layout_constraintTop_toTopOf="@+id/viewHotRankingBg" />
+
+    <ImageView
+        android:id="@+id/ivHotRankingIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/details_hot"
+        app:layout_constraintBottom_toBottomOf="@+id/viewHotRankingBg"
+        app:layout_constraintStart_toStartOf="@+id/viewHotRankingBg"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvHotRankingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="热度排行"
+        android:textColor="@color/common_text_white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewHotRankingBg"
+        app:layout_constraintStart_toStartOf="@+id/viewHotRankingBg"
+        app:layout_constraintTop_toTopOf="@+id/viewHotRankingBg" />
+
+    <TextView
+        android:id="@+id/tvHotRanking"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="100"
+        android:textColor="@color/common_text_white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewHotRankingBg"
+        app:layout_constraintEnd_toStartOf="@+id/ivHotRankingArrow"
+        app:layout_constraintStart_toEndOf="@+id/tvHotRankingTitle"
+        app:layout_constraintTop_toTopOf="@+id/viewHotRankingBg" />
+
+    <ImageView
+        android:id="@+id/ivHotRankingArrow"
+        android:layout_width="5dp"
+        android:layout_height="9dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/details_arrow_right_white"
+        app:layout_constraintBottom_toBottomOf="@+id/viewHotRankingBg"
+        app:layout_constraintEnd_toEndOf="@+id/viewHotRankingBg"
+        app:layout_constraintTop_toTopOf="@+id/viewHotRankingBg"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivFirstContributorIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/details_contribution"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFirstContributorBg"
+        app:layout_constraintStart_toStartOf="@+id/viewFirstContributorBg"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvFirstContributorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="贡献值No.1"
+        android:textColor="@color/common_text_white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFirstContributorBg"
+        app:layout_constraintStart_toStartOf="@+id/viewFirstContributorBg"
+        app:layout_constraintTop_toTopOf="@+id/viewFirstContributorBg" />
+
+    <TextView
+        android:id="@+id/tvFirstContributor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="不染天下不染尘"
+        android:textColor="@color/common_text_white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFirstContributorBg"
+        app:layout_constraintEnd_toStartOf="@+id/ivFirstContributorArrow"
+        app:layout_constraintStart_toEndOf="@+id/tvFirstContributorTitle"
+        app:layout_constraintTop_toTopOf="@+id/viewFirstContributorBg" />
+
+    <ImageView
+        android:id="@+id/ivFirstContributorArrow"
+        android:layout_width="5dp"
+        android:layout_height="9dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/details_arrow_right_white"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFirstContributorBg"
+        app:layout_constraintEnd_toEndOf="@+id/viewFirstContributorBg"
+        app:layout_constraintTop_toTopOf="@+id/viewFirstContributorBg"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="@color/main_color_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHotRankingBg"
+        tools:text="1080x2280" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="33dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHotRankingBg"
+        tools:listitem="@layout/item_original" />
+
+    <TextView
+        android:id="@+id/tvSize"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:background="@color/main_color_30"
+        android:gravity="center_vertical|start"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColor="@color/common_title"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="1080x2280" />
+</androidx.constraintlayout.widget.ConstraintLayout>
